@@ -27,7 +27,25 @@ toggle()
 {
   this.hideRooms=!this.hideRooms;
 }
+selectRoom(room:RoomList)
+{
+  console.log(room);
+}
+addRoom()
+{
+  const room:RoomList={
+    roomNumber:4,
+    roomType:'Deluxe',
+    ammenities:'AC, Geyser, Wi-Fi, TV, Kitchen',
+    price:500,
+    photos:'kfhkaf',
+    checkinTime:new Date('11-Nov-2021'),
+    checkoutTime:new Date('12-Nov-2022'),
+    rating:4,
 
+  }
+  this.roomList=[...this.roomList,room];
+}
 ngOnInit(): void {
   this.roomList=[{
     roomNumber:1,
