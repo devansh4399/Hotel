@@ -22,8 +22,9 @@ Room List
         <td>{{room.ammenities}}</td>
         <td>{{room.checkinTime |date}}</td>
         <td>{{room.rating}}</td>
-        
+        <td>
+        <button class="btn btn-primary"
+        (click)="selectRoom(room)">Select Room</button></td>
        
-
     </tr>
 </table>
